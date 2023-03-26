@@ -1,9 +1,10 @@
 .pro-container{
-    display: grid ;
+    display: grid;
     grid-template-columns: 50% 50%;
     margin: auto;
     width: 80%;
     /* border: 1px solid red; */
+    /* padding: 0 40px; */
 }
 .pro-title-img{
     padding:15px 0;
@@ -23,12 +24,12 @@
 }
 #pro-left{
     grid-column: 1/2;
-    padding:  0 40px;
+    padding-right:30px;
     border-right: 2px solid rgb(55, 96, 147);
 }
 #pro-right{
     grid-column: 2/3;
-    padding:  0 40px;
+    padding-left:30px;
 }
 .pro-item{
     /* border: 1px solid black; */
@@ -45,8 +46,6 @@
 @media (max-width:820px){
     .pro-container{
    grid-template-columns: auto;
- 
-    margin: auto;
     /* border: 1px solid rgb(111, 0, 255); */
        
     }
