@@ -157,7 +157,9 @@ const fileTypes = [
       preview.removeChild(preview.firstChild);
     }
     const image = document.createElement('img');
-    image.src = "assets/img/blur/" + getBlurImg.value + ".png";
-    image.id = "blur";
-    preview.appendChild(image);
+    if(getBlurImg.value != ""){
+      image.src = "assets/img/blur/" + getBlurImg.value + ".png";
+      image.id = "blur";
+      preview.appendChild(image);
+    }
   }
