@@ -55,6 +55,7 @@
             <h1 class="text-start text-white">CTHub: RDN.CT</h1>
             <p class="text-white">Improve the quality of low-dose CT images by using one AI nerual network. Our technology can provide high quality medical images for doctor and alleviate the pain to the patience.</p>
         </div>
+        <!-- <img src="assets/img/cour.png" alt=""> -->
                 <!-- <div class="swiper-slide" style="background: url(&quot;assets/img/slide1image.png&quot;) center center / cover no-repeat;">
                     <h1 class="text-start text-white d-lg-flex justify-content-lg-start align-items-lg-center" id="slide1-h">CTHub: RDN.CT</h1>
                     <p class="fs-4 text-white" id="slide1-p">Improve the quality of low-dose CT images by using one AI nerual<br>network. Our technology can provide high quality medical images for<br>doctor and alleviate the pain to the patience.</p>
@@ -72,8 +73,14 @@
     <div  class="deblur-container">
   
                 <div id="col-left" class ="deblur-item">
-                    <p style="font-family: Oswald, sans-serif;font-weight: bold;font-size: 20px;">Your Low Quality CT Image</p><input type="file" id="myfile">
-                    <p id="info"></p><br><br>
+                    <p style="font-family: Oswald, sans-serif;font-weight: bold;font-size: 20px;">The Low Quality CT Image</p>
+                    <!-- <input type="file" id="myfile"> -->
+                    <!-- <p id="info"></p><br><br> -->
+                    <select name="blurimg" id="selectblurimg" onchange="blurClicked()">
+                        <!-- <option value="blur1">blur1</option>
+                        <option value="blur2">blur2</option>
+                        <option value="blur3">blur3</option> -->
+                    </select>
                 </div>
 
             <div id="col-empty" class ="deblur-item">

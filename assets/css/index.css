@@ -59,6 +59,10 @@
     word-wrap: break-word;
 }
 
+#selectblurimg{
+    width: 150px;
+}
+
 @media (max-width:820px){
     .deblur-container{
    grid-template-columns: auto;
