@@ -1,6 +1,3 @@
-// var fileInput = document.getElementById('myfile');
-//  var   info = document.getElementById('info');
-    // preview = document.getElementById('blur');
     var preview = document.querySelector('.preview1');
     var clearPreview = document.querySelector('.preview2');
     var imageblur = document.getElementById('blur-image');
