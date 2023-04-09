@@ -9,7 +9,7 @@
     var download = document.getElementById('download');
     var getBlurImg = document.getElementById('selectblurimg');
 
-    var blurLists = ["","blur1","blur2","blur3"];
+    var blurLists = ["","blur-001","blur-002","blur-003","blur-004","blur-005","blur-006","blur-007","blur-008","blur-009","blur-010"];
 
 
 window.addEventListener("load",initialization,false)
@@ -57,14 +57,18 @@ function initialization() {
             // if(curFiles[0].name =="blur1.png")
             for(var i=1;i<blurLists.length;i++){
               if(getBlurImg.value == blurLists[i]){
-                image.src = "assets/img/" + "de" + blurLists[i] +".png";
+                // "assets/img/blur/" + getBlurImg.value + ".png";
+                image.src = "assets/img/deblur/" + "de" + getBlurImg.value +".png";
                 clearname = "de" + blurLists[i];
+                clearPreview.appendChild(image); 
                 download.style.pointerEvents="auto";
                 nodeblur = false;
+                break;
               }
             }
             if(nodeblur){
               image.src = "assets/img/no.png";
+              clearPreview.appendChild(image);
               download.style.pointerEvents="none";
             }
 
@@ -94,7 +98,7 @@ function initialization() {
 
               // var word = document.createElement('p');
               // word.textContent = "clear";
-              clearPreview.appendChild(image);
+              
               // clearPreview.appendChild(word);
               // trans.style.pointerEvents = "none";
         })
@@ -156,8 +160,8 @@ const fileTypes = [
     while(preview.firstChild) {
       preview.removeChild(preview.firstChild);
     }
-    const image = document.createElement('img');
     if(getBlurImg.value != ""){
+      const image = document.createElement('img');
       image.src = "assets/img/blur/" + getBlurImg.value + ".png";
       image.id = "blur";
       preview.appendChild(image);
