@@ -69,35 +69,10 @@ function initialization() {
               download.style.pointerEvents="none";
             }
 
-            // if(getBlurImg.value == "blur1")
-            //   {
-            //     // alert("one");
-            //     image.src = "assets/img/deblur1.png";
-            //     clearname = "deblur1";
-            //     download.style.pointerEvents="auto";
-            //   }
-            //     else if(getBlurImg.value =="blur2"){
-            //       image.src = "assets/img/deblur2.png";
-            //       clearname = "deblur2";
-            //       download.style.pointerEvents="auto";
-            //     }
-            //     else if(getBlurImg.value =="blur3"){
-            //       image.src = "assets/img/deblur3.png";
-            //       clearname = "deblur3";
-            //       download.style.pointerEvents="auto";
-            //     }
-            //     else{
-            //       image.src = "assets/img/no.png";
-            //       download.style.pointerEvents="none";
-            //     }
+           
               image.id = "clear";
               
 
-              // var word = document.createElement('p');
-              // word.textContent = "clear";
-              
-              // clearPreview.appendChild(word);
-              // trans.style.pointerEvents = "none";
         })
 
         // 添加download功能

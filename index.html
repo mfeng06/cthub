@@ -46,6 +46,7 @@
                     <li class="nav-item my-nav"><a class="nav-link" style="color: var(--bs-navbar-color);" href="paper.html">Paper</a></li>
                     <li class="nav-item my-nav"><a class="nav-link active" href="why.html" style="color: var(--bs-navbar-color);width: 80px;">I wish</a></li>
                     <li class="nav-item my-nav"><a class="nav-link active" href="post.html" style="color: var(--bs-navbar-color);">Project Introduction</a></li>
+                    <li class="nav-item my-nav"><a class="nav-link active" href="https://chat-gpt-cth-mt4bn8hz8-crongzi.vercel.app" style="color: var(--bs-navbar-color);"  target="_blank">ChatGPT-CTHub</a></li>
                 </ul>
             </div>
         </div>
@@ -72,44 +73,33 @@
 
     <div  class="deblur-container">
   
-                <div id="col-left" class ="deblur-item">
-                    <p style="font-family: Oswald, sans-serif;font-weight: bold;font-size: 20px;">The Low Quality CT Image</p>
-                    <!-- <input type="file" id="myfile"> -->
-                    <!-- <p id="info"></p><br><br> -->
-                    <select name="blurimg" id="selectblurimg" onchange="blurClicked()">
-                        <!-- <option value="blur1">blur1</option>
-                        <option value="blur2">blur2</option>
-                        <option value="blur3">blur3</option> -->
-                    </select>
-                </div>
+        <div id="col-left" class ="deblur-item">
+            <p style="font-family: Oswald, sans-serif;font-weight: bold;font-size: 20px;">The Low Quality CT Image</p>
+            <select name="blurimg" id="selectblurimg" onchange="blurClicked()">
+            </select>
+        </div>
 
-            <div id="col-empty" class ="deblur-item">
-
-            </div>
-            <div id="col-right" class ="deblur-item">
-             
-                    <p style="font-family: Oswald, sans-serif;font-weight: bold;font-size: 20px;">Click the button "Deblur", <br>get High Quality CT Image</p>
-          
-            </div>
+        <div id="col-empty" class ="deblur-item"> </div>
+        <div id="col-right" class ="deblur-item">
+            <p style="font-family: Oswald, sans-serif;font-weight: bold;font-size: 20px;">Click the button "Deblur", <br>get High Quality CT Image</p>
+        </div>
         
-            <div id="col-blur" class ="deblur-item">
-                <div id="blur-image" class="preview1"></div>
+        <div id="col-blur" class ="deblur-item">
+            <div id="blur-image" class="preview1"></div>
+        </div>
+        <div class="text-center align-self-center deblur-item" id="button-tr">
+            <div>
+                <div><button class="btn btn-primary" id="transfer" type="button">Deblur</button></div>
             </div>
-            <div class="text-center align-self-center deblur-item" id="button-tr">
-                <div>
-                    <div><button class="btn btn-primary" id="transfer" type="button">Deblur</button></div>
+            <div>
+                <div><button class="btn btn-primary" id="download" type="button" style="pointer-Events:none;">Download</button>
                 </div>
-                <div>
-                    <div><button class="btn btn-primary" id="download" type="button" style="pointer-Events:none;">Download</button></div>
-                </div>
-            </div>
-            <div id="col-deblur" class ="deblur-item">
-                <!-- 删除 -->
-                <!-- <div id="blur-image-1" class="preview1"></div> -->
-                <!-- 修改id -->
-                <div id="clear-image" class="preview2"></div>
             </div>
         </div>
+            <div id="col-deblur" class ="deblur-item">
+                <div id="clear-image" class="preview2"></div>
+            </div>
+    </div>
  
     
     <hr>
